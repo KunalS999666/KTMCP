@@ -1,0 +1,60 @@
+<div class="signup-page">
+  <div class="signup-box">
+    <div class="logo">
+        <a href="javascript:void(0);">MCP <b>Contact</b></a>
+    </div>
+    <div class="card">
+        <div class="body">
+            <form id="sign_up"  [formGroup]="myForm" (ngSubmit)="register()">
+                <div class="msg">Register a new contact</div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="text" formControlName="namesurname" class="form-control" name="namesurname" placeholder="Name Surname" required autofocus>
+                    </div>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                      <i class="material-icons">people_outline</i>
+                  </span>
+                  <div class="form-line">
+                      <input type="text" formControlName="empid" class="form-control" name="empid" placeholder="Emp ID" required autofocus>
+                  </div>
+              </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">email</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="email" formControlName="email" class="form-control" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="password" formControlName="password" class="form-control" name="password" minlength="6" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="password" formControlName="confirmpassword" class="form-control" name="confirm" minlength="6" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">SIGN UP</button>
+
+                <div class="m-t-25 m-b--5 align-center">
+                    <a  [routerLink]="['/']">You already have a membership?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div> 
